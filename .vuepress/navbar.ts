@@ -94,7 +94,6 @@ function createSideNavData() {
       }),
     });
   }
-  console.log(JSON.stringify(series, null, 2));
   return {
     navList,
     sideBarObj,
@@ -103,6 +102,5 @@ function createSideNavData() {
 }
 
 const { navList, sideBarObj, series } = createSideNavData();
-// console.log("navList: ", JSON.stringify(navList, null, 2));
 
 export { navList, sideBarObj, series };
