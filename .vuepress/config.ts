@@ -4,6 +4,8 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { webpackBundler } from "@vuepress/bundler-webpack";
 import { navList, series } from "./navbar";
 
+// https://github.com/vuepress-reco/vuepress-theme-reco
+
 export default defineUserConfig({
   title: "vuepress-theme-reco",
   description: "Just playing around",
@@ -18,10 +20,6 @@ export default defineUserConfig({
     docsDir: "example",
     selectLanguageName: "简体中文",
     lastUpdatedText: "最后更新时间",
-    // navbar: zhConfig.navbar,
-    // series: zhConfig.series,
-    // commentConfig: zhConfig.commentConfig,
-    // bulletin: zhConfig.bulletin,
     catalogTitle: "页面导航",
     tip: "提示",
     info: "信息",
@@ -33,29 +31,29 @@ export default defineUserConfig({
     backToHome: "返回首页",
     // series 为原 sidebar
     series: {
-      "/docs/theme-reco/": [
-        {
-          text: "module one",
-          children: ["home", "theme"],
-        },
-        {
-          text: "module two",
-          children: ["api", "plugin"],
-        },
-      ],
+      // "/docs/theme-reco/": [
+      //   {
+      //     text: "module one",
+      //     children: ["home", "theme"],
+      //   },
+      //   {
+      //     text: "module two",
+      //     children: ["api", "plugin"],
+      //   },
+      // ],
       ...series,
     },
     navbar: [
       { text: "首页", link: "/" },
       { text: "分类", link: "/categories/reco/1.html" },
       { text: "标签", link: "/tags/tag1/1.html" },
-      {
-        text: "Docs",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+      // {
+      //   text: "Docs",
+      //   children: [
+      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+      //   ],
+      // },
       ...navList,
     ],
     // bulletin: {

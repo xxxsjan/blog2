@@ -73,9 +73,7 @@ function createSideNavData() {
     //   { text: "docker", docDirName: "doc-docker" },
     //   { text: "life", docDirName: "doc-life" },
   ];
-  const series = {
-    // "/webnote/ai/": [  { text: "module one", children: ["home", "theme"],  },  ],
-  };
+  const series = {};
   for (let item of arr) {
     const _nav = createNav(item.docDirName);
     navList.push({
