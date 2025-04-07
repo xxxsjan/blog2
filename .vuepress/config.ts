@@ -7,14 +7,14 @@ import { navList, series } from "./navbar";
 // https://github.com/vuepress-reco/vuepress-theme-reco
 
 export default defineUserConfig({
-  title: "vuepress-theme-reco",
-  description: "Just playing around",
+  title: "xxxsjan的知识库",
+  description: "前端技术知识库",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
   theme: recoTheme({
-    logo: "/logo.png",
+    logo: "/code.png",
     author: "xxxsjan",
-    authorAvatar: "/head.png",
+    authorAvatar: "https://avatars.githubusercontent.com/u/60548971?v=4",
     docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
     docsBranch: "main",
     docsDir: "example",
@@ -31,29 +31,29 @@ export default defineUserConfig({
     backToHome: "返回首页",
     // series 为原 sidebar
     series: {
-      "/docs/theme-reco/": [
-        {
-          text: "module one",
-          children: ["home", "theme"],
-        },
-        {
-          text: "module two",
-          children: ["api", "plugin"],
-        },
-      ],
+      // "/docs/theme-reco/": [
+      //   {
+      //     text: "module one",
+      //     children: ["home", "theme"],
+      //   },
+      //   {
+      //     text: "module two",
+      //     children: ["api", "plugin"],
+      //   },
+      // ],
       ...series,
     },
     navbar: [
       { text: "首页", link: "/" },
-      { text: "分类", link: "/categories/reco/1.html" },
-      { text: "标签", link: "/tags/tag1/1.html" },
-      {
-        text: "Docs",
-        children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
-      },
+      // { text: "分类", link: "/categories/reco/1.html" },
+      // { text: "标签", link: "/tags/tag1/1.html" },
+      // {
+      //   text: "Docs",
+      //   children: [
+      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+      //   ],
+      // },
       ...navList,
     ],
     // bulletin: {
