@@ -21,6 +21,8 @@ blog:
 isShowTitleInHome: true
 actionText: About
 actionLink: /views/other/about
+footer:
+  startYear: 2019
 ---
 
  

@@ -9,6 +9,14 @@ import { navList, series } from "./navbar";
 export default defineUserConfig({
   title: "xxxsjan的知识库",
   description: "前端技术知识库",
+  head: [
+    ["meta", { name: "keywords", content: "前端技术,知识库" }],
+    ["meta", { name: "description", content: "前端技术知识库" }],
+    [
+      "meta",
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    ],
+  ],
   bundler: viteBundler(),
   // bundler: webpackBundler(),
   theme: recoTheme({
@@ -126,9 +134,7 @@ export default defineUserConfig({
       apiKey: "d4076b979399477f79c55eec660730ec",
       placeholder: "请输入关键词进行搜索",
       // inputSelector: "### REPLACE ME ####",
-      // algoliaOptions: {
-      //   facetFilters: ["lang:zh"],
-      // },
+      // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
       debug: true,
     },
     // socialLinks: [
