@@ -13,7 +13,7 @@ export default defineUserConfig({
   // bundler: webpackBundler(),
   theme: recoTheme({
     logo: "/logo.png",
-    author: "reco_luan",
+    author: "xxxsjan",
     authorAvatar: "/head.png",
     docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
     docsBranch: "main",
