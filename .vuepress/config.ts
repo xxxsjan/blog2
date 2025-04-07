@@ -126,8 +126,8 @@ export default defineUserConfig({
     // algolia搜索 https://dashboard.algolia.com/apps/YBYUHFPZ1C/explorer/browse/blog2
     algolia: {
       indexName: "blog2",
-      appId: "YBYUHFPZ1C",
-      apiKey: "d4076b979399477f79c55eec660730ec",
+      appId: "VHRA7B80P9",
+      apiKey: "2fa7cd9acbcdfb01d7aff13be1c2ac98",
       // inputSelector: '### REPLACE ME ####',
       // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
       // debug: false // Set debug to true if you want to inspect the dropdown
