@@ -123,11 +123,11 @@ export default defineUserConfig({
     //     // hideComments: true // 隐藏评论
     //   },
     // },
-    // algolia搜索 https://dashboard.algolia.com/apps/YBYUHFPZ1C/explorer/browse/blog2
+    // algolia搜索 https://dashboard.algolia.com/apps/VHRA7B80P9/explorer/browse/blog2
     algolia: {
       indexName: "blog2",
-      appId: "VHRA7B80P9",
-      apiKey: "2fa7cd9acbcdfb01d7aff13be1c2ac98",
+      appId: "YBYUHFPZ1C",
+      apiKey: "d4076b979399477f79c55eec660730ec",
       // inputSelector: '### REPLACE ME ####',
       // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
       // debug: false // Set debug to true if you want to inspect the dropdown
