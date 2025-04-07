@@ -15,7 +15,7 @@ export default defineUserConfig({
     logo: "/code.png",
     author: "xxxsjan",
     authorAvatar: "https://avatars.githubusercontent.com/u/60548971?v=4",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
+    docsRepo: "https://github.com/xxxsjan/blog2",
     docsBranch: "main",
     docsDir: "example",
     selectLanguageName: "简体中文",
