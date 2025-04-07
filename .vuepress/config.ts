@@ -36,10 +36,6 @@ export default defineUserConfig({
       //     text: "module one",
       //     children: ["home", "theme"],
       //   },
-      //   {
-      //     text: "module two",
-      //     children: ["api", "plugin"],
-      //   },
       // ],
       ...series,
     },
@@ -128,9 +124,12 @@ export default defineUserConfig({
       indexName: "blog2",
       appId: "YBYUHFPZ1C",
       apiKey: "d4076b979399477f79c55eec660730ec",
-      // inputSelector: '### REPLACE ME ####',
-      // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
-      // debug: false // Set debug to true if you want to inspect the dropdown
+      placeholder: "请输入关键词进行搜索",
+      // inputSelector: "### REPLACE ME ####",
+      // algoliaOptions: {
+      //   facetFilters: ["lang:zh"],
+      // },
+      debug: true,
     },
     // socialLinks: [
     //   {
