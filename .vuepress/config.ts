@@ -123,7 +123,7 @@ export default defineUserConfig({
     //     // hideComments: true // 隐藏评论
     //   },
     // },
-    // algolia搜索 https://dashboard.algolia.com/apps/VHRA7B80P9/explorer/browse/blog2
+    // algolia搜索 https://dashboard.algolia.com/
     algolia: {
       indexName: "blog2",
       appId: "YBYUHFPZ1C",
