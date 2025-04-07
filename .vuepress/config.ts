@@ -31,29 +31,29 @@ export default defineUserConfig({
     backToHome: "返回首页",
     // series 为原 sidebar
     series: {
-      // "/docs/theme-reco/": [
-      //   {
-      //     text: "module one",
-      //     children: ["home", "theme"],
-      //   },
-      //   {
-      //     text: "module two",
-      //     children: ["api", "plugin"],
-      //   },
-      // ],
+      "/docs/theme-reco/": [
+        {
+          text: "module one",
+          children: ["home", "theme"],
+        },
+        {
+          text: "module two",
+          children: ["api", "plugin"],
+        },
+      ],
       ...series,
     },
     navbar: [
       { text: "首页", link: "/" },
       { text: "分类", link: "/categories/reco/1.html" },
       { text: "标签", link: "/tags/tag1/1.html" },
-      // {
-      //   text: "Docs",
-      //   children: [
-      //     { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-      //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-      //   ],
-      // },
+      {
+        text: "Docs",
+        children: [
+          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
+          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
+        ],
+      },
       ...navList,
     ],
     // bulletin: {
@@ -123,24 +123,25 @@ export default defineUserConfig({
     //     // hideComments: true // 隐藏评论
     //   },
     // },
-    // algolia: {
-    //   appId: '38R2J3MTQC',
-    //   apiKey: '583d3caf699630b08a9bc2d12d599701',
-    //   indexName: 'v2-vuepress-reco-recoluan',
-    //   // inputSelector: '### REPLACE ME ####',
-    //   // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
-    //   // debug: false // Set debug to true if you want to inspect the dropdown
-    // },
-    socialLinks: [
-      {
-        icon: "IconReco",
-        link: "https://recoluan.com/",
-      },
-      {
-        icon: "IconRevili",
-        link: "https://revili.recoluan.com",
-      },
-    ],
+    // algolia搜索 https://dashboard.algolia.com/apps/YBYUHFPZ1C/explorer/browse/blog2
+    algolia: {
+      indexName: "blog2",
+      appId: "YBYUHFPZ1C",
+      apiKey: "d4076b979399477f79c55eec660730ec",
+      // inputSelector: '### REPLACE ME ####',
+      // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
+      // debug: false // Set debug to true if you want to inspect the dropdown
+    },
+    // socialLinks: [
+    //   {
+    //     icon: "IconReco",
+    //     link: "https://recoluan.com/",
+    //   },
+    //   {
+    //     icon: "IconRevili",
+    //     link: "https://revili.recoluan.com",
+    //   },
+    // ],
   }),
   // debug: true,
 });

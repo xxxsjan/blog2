@@ -93,7 +93,6 @@ function createSideNavData() {
         };
       }),
     });
-    // sideBarObj[`/${item.docDirName}/`] = [{ text: item.text, items: data[0] }];
   }
   console.log(JSON.stringify(series, null, 2));
   return {
