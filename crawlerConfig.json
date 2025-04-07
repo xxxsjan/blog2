@@ -10,12 +10,12 @@
       "selector": "",
       "defaultValue": "Documentation"
     },
-    "lvl1": ".content h1",
-    "lvl2": ".content h2",
-    "lvl3": ".content h3",
-    "lvl4": ".content h4",
-    "lvl5": ".content h5",
-    "content": ".content p, .content li",
+    "lvl1": ".theme-reco-md-content h1",
+    "lvl2": ".theme-reco-md-content h2",
+    "lvl3": ".theme-reco-md-content h3",
+    "lvl4": ".theme-reco-md-content h4",
+    "lvl5": ".theme-reco-md-content h5",
+    "content": ".theme-reco-md-content p, .theme-reco-md-content li",
     "lang": {
       "selector": "/html/@lang",
       "type": "xpath",
