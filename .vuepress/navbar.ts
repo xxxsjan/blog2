@@ -44,22 +44,6 @@ function createNav(dirName) {
   };
   return res;
 }
-/**
- * sideBar 转 nav
- * @param {*} sideBar
- * @param {*} dirName
- * @returns
- */
-function toNav(sideBar, dirName) {
-  return sideBar.map((item) => {
-    return {
-      text: item.text,
-      link: item.items
-        ? `/${dirName}/${item.text}/${item.items[0].text}`
-        : `/${dirName}/${item.text}`,
-    };
-  });
-}
 
 function createSideNavData() {
   const navbar: any = [];
@@ -73,7 +57,7 @@ function createSideNavData() {
     //   { text: "docker", docDirName: "doc-docker" },
     //   { text: "life", docDirName: "doc-life" },
   ];
-  const series = {};
+  const sidebar = {};
   for (let item of arr) {
     const _nav = createNav(item.docDirName);
     navbar.push({
@@ -82,8 +66,8 @@ function createSideNavData() {
       children: _nav.children.map((m) => {
         const key = `/${m.text}/`;
         const filename = m.text.split("/")[m.text.split("/").length - 1];
-        series[key] = series[key] || [];
-        series[key].push({
+        sidebar[key] = sidebar[key] || [];
+        sidebar[key].push({
           text: filename,
           children: m.children.map((m) => m.text),
         });
@@ -97,10 +81,10 @@ function createSideNavData() {
   return {
     navbar,
     sideBarObj,
-    series,
+    sidebar,
   };
 }
 
-const { navbar, sideBarObj, series } = createSideNavData();
+const { navbar, sideBarObj, sidebar } = createSideNavData();
 
-export { navbar, sideBarObj, series };
+export { navbar, sideBarObj, sidebar };
