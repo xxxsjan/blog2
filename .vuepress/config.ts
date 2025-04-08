@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { webpackBundler } from "@vuepress/bundler-webpack";
-import { navList, series } from "./navbar";
+import { navbar, series } from "./navbar";
 
 // https://github.com/vuepress-reco/vuepress-theme-reco
 
@@ -58,7 +58,7 @@ export default defineUserConfig({
       //     { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
       //   ],
       // },
-      ...navList,
+      ...navbar,
     ],
     // bulletin: {
     //   body: [

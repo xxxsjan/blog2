@@ -62,7 +62,7 @@ function toNav(sideBar, dirName) {
 }
 
 function createSideNavData() {
-  const navList: any = [];
+  const navbar: any = [];
   const sideBarObj = {};
   const arr = [
     { text: "笔记", docDirName: "webnote" },
@@ -76,7 +76,7 @@ function createSideNavData() {
   const series = {};
   for (let item of arr) {
     const _nav = createNav(item.docDirName);
-    navList.push({
+    navbar.push({
       ..._nav,
       text: item.text,
       children: _nav.children.map((m) => {
@@ -95,12 +95,12 @@ function createSideNavData() {
     });
   }
   return {
-    navList,
+    navbar,
     sideBarObj,
     series,
   };
 }
 
-const { navList, sideBarObj, series } = createSideNavData();
+const { navbar, sideBarObj, series } = createSideNavData();
 
-export { navList, sideBarObj, series };
+export { navbar, sideBarObj, series };
